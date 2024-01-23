@@ -1,0 +1,8 @@
+name: Print github info
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print
+        run: echo "${{ tojson(github) }}"
